@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="https://image.shutterstock.com/z/stock-vector-e-learning-vector-icon-flat-design-240376483.jpg" type="icon.jpg" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>E-LEARNING</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 10%;
+  background-color: #283099;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: rgba(255, 255, 255, 0.568);
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="banner.jpg" style="width:100%">
+</div>
+
+<div class="navbar">
+  <a class="button home" href="file:///C:/Users/manel/Documents/E-LEARNING%20website/index.html#">Home</a>
+  <a class="button" href="contact.html">Contact Us</a>
+  <a class="button" href="about.html">About Us</a>
+  <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+    
+    /* Full-width input fields */
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+    
+    /* Add a background color when the inputs get focus */
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Set a style for all buttons */
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    
+    button:hover {
+      opacity:1;
+    }
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: #f44336;
+    }
+    
+    /* Float cancel and signup buttons and add an equal width */
+    .cancelbtn, .signupbtn {
+      float: left;
+      width: 50%;
+    }
+    
+    /* Add padding to container elements */
+    .container {
+      padding: 16px;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: #474e5d;
+      padding-top: 50px;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      border: 1px solid #888;
+      width: 80%; /* Could be more or less, depending on screen size */
+    }
+    
+    /* Style the horizontal ruler */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 25px;
+    }
+     
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 35px;
+      top: 15px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #f1f1f1;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #f44336;
+      cursor: pointer;
+    }
+    
+    /* Clear floats */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    /* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 30px) {
+      .cancelbtn, .signupbtn {
+         width: 10%;
+      }
+    }
+    </style>
+    <body>
+    
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+    
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <form class="modal-content" action="/action_page.php">
+        <div class="container">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+    
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+    
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+    
+          <div class="clearfix">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Sign Up</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Site</h2>
+    <h5>Developer:M.Mpotulo</h5>
+    
+    <h3>Sites in Connection</h3>
+    <p>The sites below are free on some particular networks</p>
+    <h3>Mindset</h3>
+    <img src="mindset.jpg" style="width:30%">
+    
+    <h3>Vodacom e-school</h3>
+    <img src="vod.jpg" style="width:30%">
+
+    <h3>Siyavula</h3>
+    <img src="siyavulaicon.jpg" style="width:30%">
+
+    <p>This site Is created in favour of High school learners(GRD 10-12),Collecting Data free sites that Provide e-learning material. Educators can be able to answer question based on what the learners are Studying,thus increasing interaction between learners and Teachers. </p>
+  </div>
+  <div class="main">
+    <h2>MINDSET LEARN</h2>
+    <h5>Free for MTN & Vodacom netwoks</h5>
+    <img src="mindsetline.jpg" style="width:100%">
+    <a class="button register" href="https://learn.mindset.africa/user/register">Register Today</a>
+    <a class="button login" href="https://learn.mindset.africa/user/login">Login</a>
+    <p>Mindset Learn supports learners and teachers in formal schooling with a focus on Grades 10, 11 and 12 and the Maths, Sciences, Social Sciences and Finance clusters of subjects. All content is produced to the highest educational and production standards and is aligned with the Curriculum Assessment Policy Statement (CAPS). Content is in video format and is supported by PDF notes and computer based interactive lessons.</p>
+    <br>
+    <h2>Vodacom e-school</h2>
+    <h5>Free only for Vodacom</h5>
+    <img src="vodE.jpg" style="width:100%">
+    <button class="button"><a class="button register" href="https://vodacom.mytopdog.co.za/users/register">Register Today</a></button>
+    <button class="button"><a class="button login" href="https://learn.mindset.africa/user/login">Login</a></button>
+    <p>On Vodacom e-School you'll find CAPS aligned content for Grades R - 12 to assist you to learn, revise and evaluate your progress.
+    </p>
+    <br>
+    <h2>SIYAVULA</h2>
+    <h5>Free for MTN & Vodacom</h5>
+    <img src="siyavula.jpg" style="width:100%">
+    <a class="button register" href="https://www.siyavula.com/sign-up">Register Today</a>
+    <button class="button"><a class="button login" href="https://www.siyavula.com/sign-in">Login</a></button>
+    <p>World-class online Maths and Physical Sciences education.
+      Unlimited questions. Full solutions. Instant feedback. With Siyavula Practice, you CAN master Maths and Physical Sciences. Exam Prep helps you to apply what you’ve learnt to real life exam questions.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
